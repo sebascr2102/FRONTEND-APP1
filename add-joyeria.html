@@ -73,7 +73,7 @@
         <label for="moda" class="form-label">Moda</label>
         <input type="text" class="form-control" id="moda" placeholder="Tipo de moda" required>
       </div>
-      
+
       <!-- Botón de Enviar -->
       <button type="submit" class="btn btn-success">Guardar</button>
     </form>
@@ -92,7 +92,11 @@
       name: document.getElementById('name').value,
       description: document.getElementById('description').value,
       price: parseFloat(document.getElementById('price').value),
-      imgUrl: document.getElementById('imgUrl').value
+      imgUrl: document.getElementById('imgUrl').value,
+      moda: document.getElementById('moda').value,
+      id: document.getElementById('id').value,
+
+
     };
     await addjoyeria(newjoyeria);
     window.location.href = 'index.html'; 
